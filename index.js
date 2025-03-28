@@ -35,7 +35,6 @@ const sampleEvents = [
   document.addEventListener('DOMContentLoaded', () => {
       displayEvents(sampleEvents);
   });
-  
   function displayEvents(events) {
       eventsList.innerHTML = '';
       
@@ -73,7 +72,6 @@ const sampleEvents = [
    posterUpload.addEventListener('click', () => {
     fileInput.click();
 });
-
 fileInput.addEventListener('change', () => {
     if (fileInput.files.length > 0) {
         fileName.textContent = fileInput.files[0].name;
@@ -81,7 +79,6 @@ fileInput.addEventListener('change', () => {
         posterUpload.style.backgroundColor = 'white';
     }
 });
-
 eventForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -116,11 +113,9 @@ eventForm.addEventListener('submit', (e) => {
        posterUpload.style.borderColor = 'black';
        posterUpload.style.backgroundColor = 'transparent';
    });
-   
    closeBtn.addEventListener('click', () => {
        successModal.style.display = 'none';
    });
-   
    window.addEventListener('click', (e) => {
        if (e.target === successModal) {
            successModal.style.display = 'none';
