@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth, initialscale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MMAPULA MARKETING WEBSITE</title>
+  </head>
+  <body>
+  <header>
+    <div class="logo">Mmapula Marketing</div>
+    <div class="motto">The perfect platform to vent your event</div>
+  </header>
+  <nav>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#addevents">Add Events</a></li>
+    <li><a href="#contacts">Contacts</a></li>
+  </nav>
+  <div class="container">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Help us help you promote your event.</h1>
+            <p>Mmapula Marketing helps event organizers reach their target audience with ease.<br>
+            List your event with us and watch your audience grow.</p>
+            <a href="#add-event" class="btn">Add Your Event Now</a>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2 class="section-title">Featured Events</h2>
+        <div class="events-container" id="events-list">
+
+
+        </div>
+    </section>
+
+    <section class="add-events">
+        <h2 class="section-title">Add Events</h2>
+        <div class="form-container">
+            <form id="event-form">
+                <div class="form-group">
+                    <label for="event-name">Event Name</label>  
+                    <input type="text" id="event-name" class="form-control" required>         
+                 </div>
+
+                 <div class="form-group">
+                    <label for="event-date">Event Date</label>
+                    <input type="datetime-local" id="event-date" class="form-control" required>
+                 </div>
+
+                 <div class="form-group">
+                    <label for="event-venue">Event Venue</label>
+                    <input type="text" id="event-venue" class="form-control" required>
+                 </div>
+
+                 <div class="form-group">
+                    <label for="event-type">Event Type</label>
+                    <select id="event-type" class="form-control" required>
+                        <option value="">Select Event Type</option>
+                        <option value="concert">Concert</option>
+                        <option value="exhibition">Exhibition</option>
+                        <option value="festival">Festival</option>
+                        <option value="conference">Conference</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                 </div>
+
+                 <div class="form-group">
+                    <label for="event-description">Event Description</label>
+                    <textarea id="event-description" class="form-control" required></textarea>
+                 </div>
+
+                 <div class="form-control">
+                    <label>Event Poster</label>
+                    <div class="file-upload" id="poster-upload">
+                     <i class="fas fa-cloud-upload-alt"></i>
+                     <p>Click to upload your poster.</p>
+                     <small>JPEG OR PNG</small>
+                     <div id="file-name"></div>
+                     <input type="file" id="event-poster" accept="image/*" style="display: none;">
+                    </div>
+                 </div>
+
+                 <button type="submit" class="btn">Submit Event</button>
+            </form>
+        </div>
+    </section>
+  </div>
+  <footer>
+    <div class="footer-content">
+        <div class="socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="copyright">&copy ; Mmapula Marketing 2025. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <div id="success-modal" class="modal">
+    <div class="modal-content">
+        span class="close-btn">&times;</span>
+    <h2>Event Successfully Submitted!</h2>
+    <p>You have successfully added your event onto our platform.We will reveiw it, publish it and get back to you.</p>
+    <p>Thank you for trusting in us!</p>
+    </div>
+  </div>
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
