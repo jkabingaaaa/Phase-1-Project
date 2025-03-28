@@ -14,9 +14,9 @@ Basic filtering by event type.
    Event Name
    Date
    Venue
-   Event type
-   Description
-   Poster image upload
+   Event type.
+   Description.
+   Poster image upload.
    
 TECHNOLOGIES.
 1. HTML: To structure the web page.
