@@ -11,17 +11,18 @@ Displays all events in a list
 Basic filtering by event type
 2.Event submission form.
    Event Name
-Date
-Venue
-Event type
-Description
-Poster image upload
+   Date
+   Venue
+   Event type
+   Description
+   Poster image upload
 
 TECHNOLOGIES.
 1. HTML: To structure the web page.
 2. CSS: To modify and design the web application.
 3. JavaScript: To bring about interactivity.
 
+LIVE
 Github repo: https://github.com/jkabingaaaa/Phase-1-Project
 Slides: Mmapula marketing website
 Live link: https://jkabingaaaa.github.io/Phase-1-Project/
