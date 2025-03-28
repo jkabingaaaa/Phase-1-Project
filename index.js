@@ -7,6 +7,7 @@ const sampleEvents = [
         description: "A day set out for tech talks, workshops, and networking with industry leaders.",
         poster: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
+
     {
         name: "Sunset and Sjiga",
         date: "2025-04-19T18:00",
@@ -15,6 +16,7 @@ const sampleEvents = [
         description: "The ultimate nighttime party experience.",
         poster: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
+
     {
         name: "Kuza Craft Fair",
         date: "2025-04-25T10:00",
@@ -48,6 +50,7 @@ const sampleEvents = [
               hour: '2-digit',
               minute: '2-digit'
           };
+
           const formattedDate = eventDate.toLocaleDateString('en-US', options);
                 
           const eventCard = document.createElement('div');
@@ -89,6 +92,7 @@ eventForm.addEventListener('submit', (e) => {
     const eventDescription = document.getElementById('event-description').value;
     const eventPoster = fileInput.files[0];
      let posterUrl = 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+
             
      if (eventPoster) {
          posterUrl = URL.createObjectURL(eventPoster);
@@ -102,6 +106,7 @@ eventForm.addEventListener('submit', (e) => {
          description: eventDescription,
          poster: posterUrl
      };
+     
 
      sampleEvents.unshift(newEvent);
      
